@@ -1,0 +1,80 @@
+.container{
+  background-image: linear-gradient(to right top, #183642, #313d5a);
+  min-height: 100vh;
+
+  &__cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    width: 75%;
+    padding-top: 100px;
+    margin: 0 auto;
+
+    .card{
+      width: 30%;
+      margin: 10px 2.5%;
+      box-sizing: border-box;
+      position: relative;
+      
+      &:nth-child(3n){
+        margin-right: 0;
+      }
+      &:nth-child(3n+1){
+        margin-left: 0;
+      }
+
+      &__btn{
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: fit-content;
+
+        position: relative;
+
+        &__img{
+          text-decoration: none;
+          color: white;
+          width: 100%;
+        }
+
+        &:before{
+          content: 'clique aqui para abrir o projeto';
+          color: white;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: space-evenly;
+          font-size: 11px;
+          font-weight: bold;
+
+          position: absolute;
+          bottom: 3px;
+          left: 0px;
+
+          width: 100%;
+          height: 100%;
+
+          background-color: rgba(0, 0, 0, 0.5);
+
+          transition: .5s;
+        }
+      }
+
+      &__btn-hover{
+        &:before{
+          width: 100%;
+          height: 0;
+          color: transparent;
+        }
+        &:hover{
+          &:before{
+            color: white;
+            height: 98.5%;
+            z-index: auto;
+          }
+        }
+      }
+    }
+  }
+}

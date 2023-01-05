@@ -1,0 +1,42 @@
+.container{
+  display: flex;
+  background-color: white;
+  height: 75vh;
+
+  &__section-l{
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    img{
+      margin: 0 auto;
+      width: 60%;
+    }
+  }
+
+  &__section-r{
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div{
+      margin: 0 auto;
+      width: 80%;
+
+      h3{
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+
+      p{
+        text-align: justify;
+        font-size: 30px;
+      }
+
+    }
+  }
+}
