@@ -1,6 +1,9 @@
 .container{
   display: flex;
-  background-image: linear-gradient(to right, #183642, #313d5a);
+  background-image: url(https://imgur.com/jeE975p.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
 
   .section-l{
@@ -16,6 +19,7 @@
   
       &__titulo{
         font-size: 55px;
+        font-weight: 600;
       }
   
       div{
@@ -49,11 +53,11 @@
   
     img{
       border-radius: 20px;
-      width: 70%;
+      width: 50%;
       transition: .3s;
 
       &:hover{
-        opacity: 70%;
+        opacity: 80%;
       }
     }
   }

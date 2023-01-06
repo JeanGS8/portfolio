@@ -1,6 +1,15 @@
 .container{
-  background-image: linear-gradient(to right top, #183642, #313d5a);
+  background-image: linear-gradient(to right, #183642, #313d5a);
   min-height: 100vh;
+  
+  h2{
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+
+    font-size: 50px;
+    font-weight: 600;
+  }
 
   &__cards{
     display: flex;
@@ -8,7 +17,6 @@
     flex-wrap: wrap;
     
     width: 75%;
-    padding-top: 100px;
     margin: 0 auto;
 
     .card{

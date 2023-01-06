@@ -8,17 +8,18 @@
     justify-content: space-around;
 
     .lista-l{
-      h2{
+      h3{
         text-align: center;
         margin-bottom: 10px;
-        font-size: 22px;
+        font-size: 20px;
+        font-weight: 600;
       }
 
       li{
         padding-left: 15px;
         display: flex;
         margin-bottom: 5px;
-        font-size: 20px;
+        font-size: 18px;
 
         a{
           margin-left: 5px;
@@ -35,15 +36,17 @@
     }
 
     .lista-r{
-      h2{
+      h3{
         text-align: center;
         margin-bottom: 10px;
-        font-size: 22px;
+
+        font-size: 20px;
+        font-weight: 600;
       }
       li{
         display: flex;
         margin-bottom: 5px;
-        font-size: 20px;
+        font-size: 18px;
 
         p{
           margin-left: 5px;

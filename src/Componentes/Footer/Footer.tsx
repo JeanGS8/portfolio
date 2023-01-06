@@ -6,7 +6,7 @@ export default function Footer(){
     <footer className={styles['footer']}>
       <div>
         <ul className={styles['lista-l']}>
-          <h2> Redes Sociais </h2>
+          <h3> Redes Sociais </h3>
           <li>
             <AiOutlineGithub />
             <a target='_blank' href="https://github.com/JeanGS8">
@@ -21,7 +21,7 @@ export default function Footer(){
           </li>
         </ul>
         <ul className={styles['lista-r']}>
-          <h2>Informações</h2>
+          <h3>Informações</h3>
           <li>
             <AiOutlineHome />
             <p>Maré, Rio de Janeiro - RJ</p>

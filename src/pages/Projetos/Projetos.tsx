@@ -5,6 +5,7 @@ import projetos from './projetos.json';
 export default function Projetos(){
   return(
     <div id='projetos' className={styles['container']}>
+      <h2> Projetos </h2>
       <div className={styles['container__cards']}>
         {projetos.map( projeto => (
           <div className={styles['card']}>
