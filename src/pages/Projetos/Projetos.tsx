@@ -10,10 +10,7 @@ export default function Projetos(){
         {projetos.map( projeto => (
           <div className={styles['card']}>
             <a
-              className={ classNames({
-                [styles['card__btn']]: true,
-                [styles['card__btn-hover']]: true
-              })}
+              className={ styles['card__btn'] }
               target="_blank"
               href={projeto.github}
             >
