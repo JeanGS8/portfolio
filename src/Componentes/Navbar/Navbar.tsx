@@ -5,7 +5,6 @@ export default function Navbar(){
   return(
     <header className={styles['header']}>
       <nav className={styles['header__navbar']}>
-
         <ul className={styles['header__ul']}>
           {itens.map((item, index) => (
             <li

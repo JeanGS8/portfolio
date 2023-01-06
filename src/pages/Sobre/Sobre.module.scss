@@ -2,6 +2,8 @@
   display: flex;
   background-color: white;
   min-height: 75vh;
+  width: 75%;
+  margin: 0 auto;
 
   &__section-l{
     width: 40%;
@@ -11,8 +13,8 @@
     justify-content: space-evenly;
 
     img{
-      margin: 0 auto;
-      width: 60%;
+      align-self: flex-start;
+      width: 80%;
     }
   }
 
@@ -21,21 +23,21 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 
     div{
-      margin: 0 auto;
+      align-self: flex-end;
       width: 80%;
 
       h2{
         font-size: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         font-weight: 600;
       }
 
       p{
         text-align: justify;
-        font-size: 30px;
+        font-size: 25px;
       }
 
     }
