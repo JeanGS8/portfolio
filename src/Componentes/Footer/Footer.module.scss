@@ -1,7 +1,8 @@
 .footer{
-  background-color: #bdd5ea;
+  background-color: #0C1226;
 
-  div{  
+  div{
+    color: white;
     margin: 0 auto;
     padding: 20px 0;
     display: flex;
@@ -23,13 +24,12 @@
 
         a{
           margin-left: 5px;
-          color: initial;
           text-decoration: none;
           transition: 0.3s;
-          color: initial;
+          color: white;
 
           &:hover{
-            color: #153786;
+            color: #3DD9D9;
           }
         }
       }
