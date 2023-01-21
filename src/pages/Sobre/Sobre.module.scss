@@ -48,3 +48,27 @@
     }
   }
 }
+
+@media (max-width: 974px){
+  .container{    
+    .container-t{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+  
+      &__section-l{
+        width: 0;
+      }
+  
+      &__section-r{
+        width: 100%;
+  
+        div{
+          align-self: center;
+          width: 80%;
+        }
+      }
+    }
+  }
+}

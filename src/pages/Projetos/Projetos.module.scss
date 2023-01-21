@@ -77,3 +77,22 @@
     }
   }
 }
+
+@media (max-width: 974px){
+  .container{    
+    &__cards{  
+      .card{
+        width: 100%;
+        margin: 10px 0;
+  
+        &__btn{
+
+          &:before{
+            color: white;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
