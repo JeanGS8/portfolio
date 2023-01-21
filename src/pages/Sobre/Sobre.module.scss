@@ -1,9 +1,10 @@
 .container{
   background-color: #070710;
+  min-height: calc(100vh - 200px);
+  padding: 100px 0;
   
   .container-t{
     display: flex;
-    min-height: 75vh;
     width: 75%;
     margin: 0 auto;
 

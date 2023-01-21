@@ -59,3 +59,25 @@
     }
   }
 }
+
+@media (max-width: 974px){
+  .header{
+    width: 100vw;
+  }
+  .header__navbar{
+    width: 100%;
+    justify-content: center;
+  }
+  .header__ul{
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .header__anchor{
+    margin-right: 0;
+
+    &:hover:before{
+      width: 0;
+      left: 0;
+    }
+  }
+}
