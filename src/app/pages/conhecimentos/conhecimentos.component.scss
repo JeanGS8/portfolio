@@ -1,0 +1,12 @@
+.layout{
+  background-position-y: top;
+}
+.autoplay {
+  margin: 0 auto;
+  width: 95%;
+  height: 100%;
+
+  & img{
+    height: 100px;
+  }
+}

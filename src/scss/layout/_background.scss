@@ -1,0 +1,21 @@
+.layout{
+  position: relative;
+  min-height: 100vh;
+  height: 100vh;
+  // background-color: #BCE7FD;
+  background-color: #004378;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+.blur::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+}

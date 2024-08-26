@@ -1,0 +1,28 @@
+<div
+  [ngStyle]="{'background-image': 'url(background/azul-claro-baixo.jpg)'}"
+  class="layout container-fluid"
+>
+  <div class="row">
+    <div class="col text-center text-light text-shadow my-5">
+      <h2 class="fs-1">Conhecimentos</h2>
+    </div>
+  </div>
+  
+  <div class="row position-relative h-100">
+    <div class="col-12 text-center py-5">
+      <span #text class="fs-2 text-shadow text-light" ></span>
+    </div>
+    <div class="col-12 pt-5 position-absolute top-0 left-0 w-100 h-100 d-flex flex-column justify-content-center">
+      <div class="autoplay d-flex align-items-center h-auto">
+        @for(img of imgs(); track img.src){
+          <img
+            [src]="img.src"
+            [alt]="img.alt"
+            (mouseover)="text.textContent = img.alt"
+            (mouseleave)="text.textContent = ''"
+          >
+        }
+      </div>
+    </div>
+  </div>
+</div>
