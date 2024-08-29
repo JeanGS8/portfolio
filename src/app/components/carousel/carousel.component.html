@@ -20,15 +20,21 @@
     <div class="col-10 offset-1 mx-auto single-item d-flex align-items-center">
       @for(projeto of projetos(); track projeto.title){
         <div class="row d-flex justify-content-around">
-          <div class="col-12 col-md-6 single-mini mx-auto d-flex align-items-center">
-            @for(foto of projeto.fotosJson; track foto){
-              <img [src]="foto" [alt]="projeto.title" loading="eager">
-            }
-          </div>
-
-          <div class="col-12 col-md-5 mx-auto d-flex flex-column justify-content-evenly align-items-center">
-            <h2 class="fs-2 mb-2 text-shadow text-light">{{projeto.title}}</h2>
-            <p class="fs-5 text-shadow text-light text-justify">{{projeto.overview}}</p>
+          @if(projeto.fotosJson.length > 1){
+            <div class="col-11 col-md-6 single-mini mx-auto d-flex align-items-center">
+              @for(foto of projeto.fotosJson; track foto){
+                <img [src]="foto" [alt]="projeto.title" loading="eager">
+              }
+            </div>
+          }
+          @else {
+            <div class="col-11 col-md-6 mb-4 mx-auto d-flex align-items-center">
+              <img [src]="projeto.fotosJson" [alt]="projeto.title" loading="eager">
+            </div>
+          }
+          <div class="col-11 col-md-5 mx-auto d-flex flex-column justify-content-evenly align-items-center">
+            <h2 class="fs-2 text-shadow text-light">{{projeto.title}}</h2>
+            <p class="fs-5 mt-3 text-shadow text-light text-justify">{{projeto.overview}}</p>
           </div>
         </div>
       }
