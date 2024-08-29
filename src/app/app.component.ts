@@ -1,17 +1,19 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { TesteComponent } from '@components/teste/teste.component';
 import { PerfilComponent } from "./pages/perfil/perfil.component";
 import { ConhecimentosComponent } from './pages/conhecimentos/conhecimentos.component';
+import { ProjetosComponent } from './pages/projetos/projetos.component';
+import { FooterComponent } from '@components/footer/footer.component';
+import { NavbarComponent } from '@components/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
-    TesteComponent,
+    NavbarComponent,
     PerfilComponent,
-    ConhecimentosComponent
+    ConhecimentosComponent,
+    ProjetosComponent,
+    FooterComponent
   ],
   templateUrl: "app.component.html"
 })

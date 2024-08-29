@@ -1,16 +1,17 @@
 import { CommonModule } from '@angular/common';
 import "slick-carousel";
-import { AfterViewInit, ChangeDetectionStrategy, Component, inject, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { CarouselComponent } from '@components/carousel/carousel.component';
 
 @Component({
   selector: 'app-conhecimentos',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, CarouselComponent],
   templateUrl: './conhecimentos.component.html',
   styleUrl: './conhecimentos.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ConhecimentosComponent implements AfterViewInit {
+export class ConhecimentosComponent {
 
   public imgs = signal([
     {
@@ -62,32 +63,4 @@ export class ConhecimentosComponent implements AfterViewInit {
       "alt": "Material UI"
     }
   ]);
-
-  ngAfterViewInit(): void {
-    $('.autoplay').slick({
-      autoplay: true,
-      autoplaySpeed: 1500,
-      infinite: true,
-      arrows: true,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            autoplaySpeed: 1000,
-            arrows: false,
-            slidesToShow: 2,
-          }
-        }
-      ]
-    })
-  }
 }

@@ -1,0 +1,37 @@
+@if(conhecimentos().length > 0){
+  <div class="row position-absolute top-0 left-0 w-100 h-100 d-flex flex-column justify-content-evenly">
+    <div class="col-10 mx-auto slider-for text-center">
+      @for(img of conhecimentos(); track img.alt){
+        <span class="fs-3 text-shadow text-light">{{img.alt}}</span>
+      }
+    </div>
+    <div class="col-10 mx-auto slider-nav">
+      @for(img of conhecimentos(); track img.src){
+        <img
+          [src]="img.src"
+          [alt]="img.alt"
+        >
+      }
+    </div>
+  </div>
+}
+@else if(projetos().length > 0){
+  <div class="row position-absolute h-100 w-100 top-0 left-0">
+    <div class="col-10 offset-1 mx-auto single-item d-flex align-items-center">
+      @for(projeto of projetos(); track projeto.title){
+        <div class="row d-flex justify-content-around">
+          <div class="col-12 col-md-6 single-mini mx-auto d-flex align-items-center">
+            @for(foto of projeto.fotosJson; track foto){
+              <img [src]="foto" [alt]="projeto.title" loading="eager">
+            }
+          </div>
+
+          <div class="col-12 col-md-5 mx-auto d-flex flex-column justify-content-evenly align-items-center">
+            <h2 class="fs-2 mb-2 text-shadow text-light">{{projeto.title}}</h2>
+            <p class="fs-5 text-shadow text-light text-justify">{{projeto.overview}}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+}

@@ -1,0 +1,12 @@
+<div [ngStyle]="{'background-image': 'url(background/nublado.jpg)'}" class="layout container-fluid position-relative" id="projetos">
+  <div class="row">
+    <div class="col text-center mt-5">
+      <h2 class="fs-1 text-light text-shadow">Projetos</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <app-carousel [inputProjetos]="projetos()"/>
+    </div>
+  </div>
+</div>

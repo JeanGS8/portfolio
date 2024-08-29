@@ -1,0 +1,9 @@
+img{
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+  width: 80px;
+  
+  @media (width >= 576px) {
+    width: 100px;
+  }
+}
